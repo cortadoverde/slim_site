@@ -1,0 +1,54 @@
+{% extends 'templates/default.twig' %}
+
+{% block content %}
+  <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="/admin">Inicio</a></li>
+      <li><a href="/admin/secciones">Secciones</a></li>
+      <li class="active">{{action}}</li>
+    </ol>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{action}}</h3>
+    </div>
+    <div class="panel-body">
+      <form action="{{base_url()}}/admin/secciones/{{action}}" method="POST">
+        <div class="form-group">
+          <label for="input_title">Titulo</label>
+          <input type="text" id="input_title" name="data[title]" class="form-control" value="{{model.title}}">
+        </div>
+
+
+        {% include 'partial/upload/form.twig' %}
+
+
+        <div class="form-group">
+          <label for="input_description">Contenido</label>
+          <textarea id="input_description" name="data[content]" class="form-control">{{model.content}}</textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="input_description">Keywords</label>
+          <textarea id="input_description" name="data[keywords]" class="form-control">{{model.keywords}}</textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="input_description">Meta descriptions</label>
+          <textarea id="input_description" name="data[metadescription]" class="form-control">{{model.metadescription}}</textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-dafault">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+{{ parent() }}
+{% include 'partial/upload/scripts.twig' %}
+
+{% endblock %}

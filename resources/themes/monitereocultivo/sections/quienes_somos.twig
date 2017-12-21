@@ -1,0 +1,14 @@
+{% extends 'templates/default.twig' %}
+
+{% block content %}
+  <section class="bar background-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{section.content | raw }}
+
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

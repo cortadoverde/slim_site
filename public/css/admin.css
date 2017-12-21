@@ -1,0 +1,60 @@
+.block-login {
+  padding-top: 150px;
+  background: url('../img/texture-bw.png');
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+#listUpload li img{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#listUpload {
+  padding:10px 0 20px;
+  overflow:hidden;
+}
+#listUpload li:hover {
+  cursor:move;
+}
+
+#listUpload li:first-of-type {
+  border-color: #FF9900;
+}
+
+#listUpload li:first-of-type:after{
+  content:"Imagen principal";
+  position:absolute;
+  width:100%;
+  left:0;
+  bottom:-1.5em;
+
+
+}
+
+#listUpload li {
+  float:left;
+  position:relative;
+  padding: 10px;
+  border: solid 1px #e2e2e2;
+  margin-right:10px;
+  border-radius: 2px;
+}
+
+#listUpload li .btn {
+  position: absolute;
+  font-size: 0.7em;
+  padding: 0.4em 1em;
+  border-radius: 1px;
+  right: 3px;
+  top: 3px;
+}
+
+a[href="https://www.froala.com/wysiwyg-editor?k=u"] {
+  display:none !important;
+}
+
+

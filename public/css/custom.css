@@ -1,0 +1,48 @@
+/* your styles go here */
+.navbar ul.nav > li > a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: normal;
+  text-decoration: none;
+}
+
+
+.home-carousel {
+  background: none;
+}
+
+.home-carousel .owl-carousel {
+  padding:0;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 77px;
+  }
+}
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border:none;
+    border-top: 15px solid #bdd3a8;
+}
+
+.bx-pager.bx-default-pager {
+  background:#2b373f;
+  padding-top:0;
+  padding-bottom:20px;
+}
+
+#footer img.logo {
+  width:290px !important;
+}
+
+.listicons li {
+  padding:5px 0;
+  font-weight:bold;
+}
+
+.listicons li i.fa {
+  margin-right: 5px;
+}

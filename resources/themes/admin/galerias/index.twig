@@ -1,0 +1,35 @@
+{% extends 'templates/default.twig' %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="{{base_url()}}/admin/galerias/agregar">Crear galeria</a></li>
+      </ul>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Titulo</td>
+        <td colspan="2">Acciones</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.title}}</td>
+          <td>
+            <a href="{{base_url()}}/admin/galerias/editar/{{item.id}}">editar</a>
+          </td>
+          <td>
+            <a href="{{base_url()}}/admin/galerias/borrar/{{item.id}}">borrar</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

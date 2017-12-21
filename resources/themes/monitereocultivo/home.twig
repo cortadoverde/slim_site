@@ -1,0 +1,51 @@
+{% extends 'templates/default.twig' %}
+
+{% block content %}
+  <div class="home-carousel">
+    <div class="homepage-slider">
+
+      <div class="item">
+        <img class="img-responsive" src="{{ base_url() }}/img/rotador_cultivo.jpg" alt="">
+      </div>
+
+      <div class="item">
+        <img class="img-responsive" src="{{ base_url() }}/img/rotador_cultivo.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <section class="bar background-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box-simple">
+            <div class="img">
+              <img src="{{ base_url() }}/img/home/g470.png" alt="">
+            </div>
+            <h2>Cotizaciones</h2>
+            <p>definir</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-simple">
+            <div class="img">
+              <img src="{{ base_url() }}/img/home/g471.png" alt="">
+            </div>
+            <h2>Contratistas Rurales</h2>
+            <p>definir</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-simple">
+            <div class="img">
+              <img src="{{ base_url() }}/img/home/g472.png" alt="">
+            </div>
+            <h2>Clima</h2>
+            <p>definir</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

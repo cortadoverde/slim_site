@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-12">
+        <input id="fileupload" type="file" name="files[]" data-url="{{base_url()}}/admin/upload" multiple>
+    </div>
+    <div class="col-md-12" id="actions">
+
+    </div>
+    <div class="col-md-12">
+        <ul  id="listUpload" class="list-unstyled">
+        {% for image in images %}
+          <li>
+            <img src="{{base_url()}}/img/upload/thumbnail/{{image.name}}" alt="{{image.name}}">
+            <input type="hidden" name="data[image][]" value="{{image.id}}">
+            <a href="#" class="btn btn-danger deleteImage" rel="{{image.name}}">x</a>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>

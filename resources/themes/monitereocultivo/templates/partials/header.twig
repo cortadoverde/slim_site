@@ -1,0 +1,28 @@
+<header>
+  <div id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-5 contact">
+         </div>
+         <div class="col-xs-7">
+
+             <div class="login">
+               <ul class="nav nav-pills">
+                  <li role="presentation"><a href="#">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  </a></li>
+                  <li role="presentation"><a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a></li>
+
+                  <li role="presentation"><a href="{{ base_url()}}/noticias">Noticias</a></li>
+                  <li role="presentation"><a href="{{ base_url()}}/contacto">Contacto</a></li>
+                </ul>
+             </div>
+
+         </div>
+      </div>
+    </div>
+  </div>
+  {% include 'templates/partials/header/menu.twig' %}
+</header>

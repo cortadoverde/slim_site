@@ -1,0 +1,29 @@
+{% extends 'templates/default.twig' %}
+
+{% block content %}
+
+  <table class="table">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Titulo</td>
+        <td colspan="2">Acciones</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.title}}</td>
+          <td>
+            <a href="{{base_url()}}/admin/secciones/editar/{{item.id}}">editar</a>
+          </td>
+          <td>
+            <a href="{{base_url()}}/admin/secciones/borrar/{{item.id}}">borrar</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

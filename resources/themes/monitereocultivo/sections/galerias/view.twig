@@ -1,0 +1,31 @@
+{% extends 'templates/default.twig' %}
+
+{% block content %}
+  <div id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="heading">
+            <h2>{{data.title}}</h2>
+          </div>
+          <p class="lead">
+            {{data.description | striptags('<h1><br><i><s>') | raw }}
+          </p>
+          <a href="{{base_url()}}/galeria_de_fotos" class="btn btn-template-primary">volver</a>
+        </div>
+      </div>
+
+      <div class="row portfolio">
+        {% for image in data.images %}
+          <div class="col-sm-6 col-md-3">
+            <div class="box-image">
+              <div class="image">
+                <img src="{{base_url()}}/img/upload/{{image.name}}" alt="{{image.name}}" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
