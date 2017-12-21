@@ -14,7 +14,7 @@ clonar el repositorio y hacer un dumpautoload para apuntar el autoload a la libr
 
 * Para esta version se utilizo el micro framework slim 3 ( https://www.slimframework.com )
   * Manejo de rutas y middlewares
-  * Manejo de Container Injection ( permite mantener un contedor unico en tiempo de ejecución
+  * Dependency Container ( permite mantener un contedor unico en tiempo de ejecución
 
 * Para el manejo de abstraccion de datos implemente Eloquent ( https://laravel.com/docs/5.5/eloquent )
 ORM
